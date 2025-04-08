@@ -44,12 +44,14 @@
 ## Step 3 : 코드 완성 기능의 컨텍스트 이해하기
 - Copilot은 코드 완성 기능을 제공하기 위해, **주석과 함수 이름을 기반으로** 컨텍스트를 이해합니다.<br>
 - 또한, 현재 작성중인 파일의 커서 위치의 **전,후 데이터**와, 이 데이터와 유사한 데이터를 **오픈되어져 있는 주변의 탭**에서 찾아 컨텍스트를 이해합니다. (**Neighboring Tab**) <br>
-   - 코드 완성 기능에서의 Neighboring Tab 기법을 테스트하기 위해 아래 절차데로 실습합니다. 
+- GitHub Copilot의 코드 완성 기능의 C/C++에 대한 지원은, 한단계 더 나아가 헤더 파일이 오픈되어 있지 않더라도 직접적으로 참조된 헤더 파일들을 자동으로 컨텍스트로 사용하여 코드 완성 기능을 지원합니다. ([블로그 기사링크](https://github.blog/changelog/2024-08-01-improving-github-copilot-completions-in-vs-code-for-c-developers/))
+
+   - 코드 완성 기능에서의 컨텍스트 전달을 테스트하기 위해 아래 절차데로 실습합니다. 
    - `/src` 디렉토리의 `url_tools.c`, `url_tools.h`, `url.c`, `url.h` 파일 내용을 현재 실습하는 워크스페이스로 복사 <br>
      <img src = "img/16.png" width = "800"> <br>
      <img src = "img/17.png" width = "800"> <br>
 
-   - 복사된 `url_tools.c` 파일은 오픈된 상태로 두고, `url.c` 파일의 함수 마지막 라인에서 키보드의 Enter를 누르면 아래와 같이 url_tools.c의 함수가 제안됩니다.<br>   
+   - 헤더 파일을 닫고, url.c` 파일의 함수 마지막 라인에서 키보드의 Enter를 누르면 아래와 같이 url_tools.c의 함수가 제안됩니다.<br>   
      <img src = "img/18.png" width = "800">
 
 
