@@ -21,17 +21,17 @@
          - VS Code의 설정에서 관련 설정을 활성화 <br>
           <img src="img/30.png" width="600">
           <img src="img/31.png" width="800"><br>
-         - [Copilot instructions](src/copilot-instructions.md)를 작성합니다. <br>
+         - [Copilot instructions](src/copilot-instructions.md)를 작성합니다.  <br>
           <img src="img/32.png" width="600">
 
       - VS Code의 User setting, 혹은 Workspace setting을 하는 JSON파일에 Text 혹은 File로 형식으로 작성되며, VS Code의 settings.json 파일에 추가됩니다.
 
           - 프로젝트에 `/docs` 디렉토리를 생성합니다. 
-          - 예제로 주어진 /docs 디렉토리의 파일들을 복사하여, 실습중인 프로젝트에에 붙여 넣습니다. <br>
+          - 예제로 주어진 /docs 디렉토리의 파일들을 복사하여, 실습중인 프로젝트에 붙여 넣습니다. <br>
             <img src="img/01.png" width="400">
           - 붙여넣어진 파일들의 내용을 확인하고, 별도로 원하는 내용이 있을 경우 수정해 봅니다. 
 
-          - Ctrl + Shift + P를 눌러 명령어 팔레트를 열고, `Preference: Open Workspace Settings (JSON)`을 선택합니다. <br>
+          - `Ctrl + Shift + P`를 눌러 명령어 팔레트를 열고, `Preference: Open Workspace Settings (JSON)`을 선택합니다. <br>
             <img src="img/02.png" width="800">
 
           - settings.json 파일에 "github.copilot.chat.codeGeneration.instructions"을 추가합니다. <br>
@@ -60,7 +60,7 @@
 
 ## Step 2: 프로그램 생성 다이어 그램 요청
 
-- 모델을 변경합니다. Claude 3.7 Sonnet(Preview) 모델을 선택합니다. <br>
+- 모델을 변경합니다. `Claude 3.7 Sonnet` 모델을 선택합니다. <br>
 
 - `이 프로젝트의 다이어그램을 생성해 줘` 라고 질문하여 프로젝트 구조를 확인합니다. <br>
   <img src="img/05.png" width="800">
@@ -102,7 +102,7 @@
 
 ## Step 5: Member 모듈 생성
 
-- 이번에는 **<span style="color:red;">Copilot Edit</span>**을 활용하여 Member 헤더파일과 소스파일을 한꺼번에 생성해 봅니다. <br>
+- 이번에는 <span style="color:red">**Copilot Edit**</span>을 활용하여 Member 헤더파일과 소스파일을 한꺼번에 생성해 봅니다. <br>
   
 - 각각 `member.h`파일과 `member.c`파일을 생성합니다. <br>
 
@@ -125,7 +125,7 @@
 
 ## Step 6: Loan 모듈 생성
 
-- 이번에는 **<span style="color:red;">Copilot Agent</span>**을 활용하여 Loan 헤더파일과 소스파일을 한꺼번에 생성해 봅니다. <br>
+- 이번에는 <span style="color:red">**Copilot Agent**</span>을 활용하여 Loan 헤더파일과 소스파일을 한꺼번에 생성해 봅니다. <br>
 
 - Copilot Chat을 'Agent' 모드로 변경합니다. <br>
   <img src="img/17.png" width="400">
@@ -165,7 +165,7 @@
   <img src="img/26.png" width="800">
 
 ## Step 9: 저장
-- Ctrl + Shift + P를 눌러 명령어 팔레트를 열고, `File: Save All Files`를 선택합니다. <br>
+- `Ctrl + Shift + P`를 눌러 명령어 팔레트를 열고, `File: Save All Files`를 선택합니다. <br>
   <img src="img/29.png" width="600">
 
 

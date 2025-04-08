@@ -16,9 +16,10 @@
 - `book 모듈에 대한 단위 테스트를 작성해줘` <br>
   <img src="img/01.png" width="800">
   <img src="img/02.png" width="800">
+
 - 'Makefile tools'가 설치되어 있지 않는 것을 확인하고, 자동으로 설치합니다. <br>
-  <img src="img/03.png" width="600">
-  <img src="img/04.png" width="600">
+  <img src="img/03.png" width="600"> <br>
+  <img src="img/04.png" width="300"> <br>
 
 - book모듈에 대해 생성된 내용을 확인합니다. <br>
    <img src="img/05.png" width="800">
@@ -67,8 +68,8 @@
  
 - git이 활성화되어 있지 않다면 활성화 하고, 변경된 파일들을 stage상태로 한 뒤, 커밋 메세지 입력 창의 우측 '`스파클`' 모양 버튼을 눌러 커밋메세지를 생성해, instructions의 지침데로 생성되는지 확인합니다. 
 
-   <img src="img/17.png" width="600">
-   <img src="img/18.png" width="600">
+   <img src="img/17.png" width="400">
+   <img src="img/18.png" width="400">
 
 
 

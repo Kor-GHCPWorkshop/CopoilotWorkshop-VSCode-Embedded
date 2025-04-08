@@ -43,9 +43,9 @@
 - 프롬프트 예시 : `loan.c의 날짜 관련 함수들을 별도의 utils 모듈로 분리해서 리팩토링 해줘`  
 
 - 제안되는 내용과 개선 코드를 확인합니다. <br>
-  <img src="img/08.png" width="900">
+  <img src="img/08.png" width="700">
 
-## Step 3: 변경 내용에 대한 영향 분석을 Copiot에게 질문하기 
+## Step 3: 변경 내용에 대한 영향 분석을 Copilot에게 질문하기 
 
 - 리팩토링으로 인한 코드 변경 사항에 대해 코드의 다른 부분에 어떤 영향이 있을지를 Copilot에게 질문하고 관련된 코드를 제안받습니다. <br>
 
@@ -55,7 +55,7 @@
   <img src="img/09.png" width="600">
 
 - 참고: `@workspace`는 Ask 모드에서 사용자가 질문한 내용에 대해 전체 코드베이스에서 관련된 파일들과 심볼들을 검색하고, 이것들을 답변에 참조합니다.  
-  - [VS Code @worksapce 설명문서](https://code.visualstudio.com/docs/copilot/reference/workspace-context)
+  - [VS Code @workspace 설명문서](https://code.visualstudio.com/docs/copilot/reference/workspace-context)
 
   - @worspace는 
     - 먼저, @workspace는 사용자 질문에 답변하는 데 필요한 정보를 파악합니다. 여기에는 대화 기록, 작업 공간 구조, 현재 선택된 코드 등이 포함됩니다.
@@ -77,8 +77,8 @@
 	- 코드 베이스의 구조나 기능 구현된 것에 대한 상위 수준의 질문
 
 - Copilot이 제안하는 내용을 확인합니다. <br>
-  <img src="img/10.png" width="900">
-  <img src="img/11.png" width="900">`  
+  <img src="img/10.png" width="700">
+  <img src="img/11.png" width="700">`  
 
 ## Step 4: 성능 관점에서 리팩토링 요청
 - src 디렉토리에 있는 `getDiscount.c` 파일을 열고, 성능 관점에서 리팩토링을 요청합니다. <br>
@@ -88,7 +88,7 @@
 - 프롬프트 예시: `파일의 성능 관점에서 개선점을 제안해줘` <br>
 
 - 제안되는 내용과 개선 코드를 확인합니다.<br>
-  <img src="img/12.png" width="900">
+  <img src="img/12.png" width="700">
 
 
 ## Step 5: 보안 문제점 분석에 대한 개선 요청
@@ -100,7 +100,7 @@
 - 프롬프트 예시: `파일의 보안 문제점을 분석하고 개선할 부분을 제안해줘`
 
 - 제안되는 내용과 개선 코드를 확인합니다. <br>
-  <img src="img/13.png" width="900">
+  <img src="img/13.png" width="700">
 
 ## Step 6: 프롬프트 파일을 활용해 코드 리뷰 요청
 - 생성된 코드에 대해 프롬프트 파일을 활용해 코드 리뷰를 요청합니다. <br>
@@ -112,8 +112,8 @@
   <img src="img/15.png" width="600">
 
 - 제안되는 내용과 개선 코드를 확인합니다. <br>
-  <img src="img/16.png" width="900">
-  <img src="img/17.png" width="900">
+  <img src="img/16.png" width="700">
+  <img src="img/17.png" width="700">
 
 ## 추가자료
   - [다양한 GitHub Copilot 사용에 대한 가이드](https://docs.github.com/ko/enterprise-cloud@latest/copilot/using-github-copilot/guides-on-using-github-copilot)
