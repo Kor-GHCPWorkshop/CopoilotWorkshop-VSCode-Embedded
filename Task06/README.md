@@ -30,13 +30,13 @@
    <img src="img/03.png" width="800">
   
   - General에서 App name과 Homepage URL, Callback URL을 입력합니다. (Ngrok URL사용) <br>
-   <img src="img/09.png" width="800> <br>
+   <img src="img/09.png" width="800"> <br>
 
   - Account permission에서 Copilot 관련 2가지 권한을 'read-only'로 설정합니다. <br>
    <img src="img/04.png" width="800"> <br>
 
   - App Type을 Skillset으로 설정합니다. <br>
-   <img src="img/05.png" width="500"> <br>
+   <img src="img/05.png" width="400"> <br>
    
   - Skill definitions를 추가합니다. <br>
    <img src="img/06.png" width="600"> <br>
@@ -60,32 +60,33 @@
 	"type": "object"
 	}
 	```
-   <img src="img/07.png" width="800"> <br>
+	
+   <img src="img/07.png" width="500"> 
 
-   <img src="img/10.png" width="800> <br>
+   <img src="img/10.png" width="500"> <br>
 
 - Save 합니다. 
 
-- 왼편의 `Install App` 메뉴에서 Install 합니다. 
-  <img src="img/08.png" width="800>
+- 왼편의 `Install App` 메뉴에서 Install 합니다. <br>
+  <img src="img/08.png" width="600">
 
-
-- 테스트를 위해, 별도의 VS Code를 실행하고, Copilot Chat에서 @를 타이핑하여, 방금 추가된 Copilot Extension을 확인하고, Authorization 과정을 진행합니다. 
-  <img src="img/11.png" width="600> <br>
-  <img src="img/12.png" width="600>
+- 테스트를 위해, 별도의 VS Code를 실행하고, Copilot Chat에서 @를 타이핑하여, 방금 추가된 Copilot Extension을 확인하고, Authorization 과정을 진행합니다.<br> 
+  <img src="img/11.png" width="600"> 
+  <img src="img/12.png" width="600">
 
 - `Ask` 모드에서 **GPT-4o** 모델을 선택합니다. <br>
-  <img src="img/14.png" width="800> <br>
+  <img src="img/14.png" width="400"> <br>
 
-- Authorization이 완료되면, @extenion-name을 타이핑하고, Copilot Standalone에 대해 설명해줘 등과 같은 질문을 통해 Copilot Extension의 동작을 확인합니다. <br>
-  <img src="img/16.png" width="600> <br>
-  <img src="img/13.png" width="800> <br>
+- Authorization이 완료되면, `@extenion-name`을 타이핑하고, Copilot Standalone에 대해 설명해줘 등과 같은 질문을 통해 Copilot Extension의 동작을 확인합니다. <br>
+  <img src="img/16.png" width="600"> <br>
+  <img src="img/13.png" width="600"> <br>
+
   - Ngrok에서 200K 회신 됩니다. <br>
-  <img src="img/15.png" width="800> <br>
+  <img src="img/15.png" width="600"> <br>
 
 - 추가로 다른 질문도 실행해 봅니다. <br>
-  <img src="img/17.png" width="800> <br>
-  <img src="img/18.png" width="800> <br>
+  <img src="img/17.png" width="600"> <br>
+  <img src="img/18.png" width="600"> <br>
 
 ## Step 2: Agent Extension 생성 실습
 - 참조 repository : https://github.com/Kor-GHCPWorkshop/gist_funcCall_demo
@@ -101,22 +102,22 @@
 - Agent Extension을 생성하기 위해, 다음 단계를 진행합니다.
    - 서버를 실행하고, Ngrok으로 외부로 포워딩 합니다. 
    - 위 Skillset Extension과 동일한 절차로 app을 생성하지만, 'Agent' 모드를 선택합니다. <br>
-      <img src="img/05.png" width="500"> <br>
+      <img src="img/05.png" width="300"> <br>
 
    - URL과 Inference description을 설정합니다. <br>
-	  <img src="img/19.png" width="600> <br>
+	  <img src="img/19.png" width="600"> <br>
 
-   - app을 설치합다. <br>
+   - app을 설치합니다. <br>
 
 
 - 테스트를 위해, 별도의 VS Code를 실행하고, Copilot Chat에서 @를 타이핑하여, 방금 추가된 Copilot Extension을 확인하고, Authorization 과정을 진행합니다.
 
-- Authorization이 완료되면, @extenion-name을 타이핑하고, create a gist 등과 같은 요청청을 통해 Copilot Extension의 동작을 확인합니다. <br>
-  <img src="img/20.png" width="800> <br>
-  <img src="img/21.png" width="800> <br>
+- Authorization이 완료되면, `@extenion-name`을 타이핑하고, create a gist 등과 같은 요청청을 통해 Copilot Extension의 동작을 확인합니다. <br>
+  <img src="img/20.png" width="600"> <br>
+  <img src="img/21.png" width="600"> <br>
 
 - Gist가 생성되었는지 확인합니다. <br>
-  <img src="img/22.png" width="800> <br>
+  <img src="img/22.png" width="800"> <br>
 
 
 ## 추가 자료
