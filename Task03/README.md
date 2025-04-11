@@ -157,8 +157,19 @@
 - Copilot이 코드베이스를 검색하고, 파일 및 코드 생성 내용을 확인합니다. <br>
   <img src="img/24.png" width="800">
 
+## Step 8: Plant UML 다이어그램 생성
+- 생성된 코드 중 특정 부분 함수를 선택하고, Copilot에게 Plant UML 플로우 차트를 생성해 달라고 요청합니다.  <br>
+  <img src="img/27.png" width="800">
+  <img src="img/28.png" width="600">
 
-## Step 8: Makefile 생성
+- 생성된 Plant UML 플로우 챠트를 파일로 생성합니다. <br>
+  <img src="img/33.png" width="800">
+
+- 플로우 챠트를 확인합니다. <br>
+  <img src="img/34.png" width="500">
+  <img src="img/35.png" width="800">
+
+## Step 9: Makefile 생성
 
 - Agent모드에서 `Makefile을 생성해줘` 라고 요청합니다. <br>
   <img src="img/25.png" width="600">
