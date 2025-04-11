@@ -19,17 +19,17 @@
 
 - 두가지 옵션을 제안해 줍니다. <br>
   - Option 1: Makefile에 테스트 타겟 추가 <br>
-  <img src="img/02.png" width="800">
+  <img src="img/02.png" width="600">
 
   - Option 2: CMakeLists.txt 생성 <br>
-  <img src="img/03.png" width="800">
+  <img src="img/03.png" width="600">
 
 
 - Option 2으로 진행하기로 하고, CMakeLists.txt파일을 생성. <br>
-  <img src="img/04.png" width="800">
+  <img src="img/04.png" width="600">
 
 - book모듈에 대해 생성된 내용을 확인합니다. <br>
-   <img src="img/05.png" width="800">
+   <img src="img/05.png" width="600">
 
 
 ## Step 2: CLI 명령 터미널에서 Copilot 사용: 테스트 실행 명령어 Copilot에 문의
