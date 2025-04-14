@@ -54,7 +54,7 @@
 ## [Task 4](/Task04/README.md): 도서 대출 관리 프로그램 만들기 (Part 2)
   - Part 1에서 생성된 도서 대출 관리 프로그램에 Copilot을 활용해 단위 테스트 코드를 생성성하고, 테스트 시 에러에 대한 트러블 슈팅에 Copilot을 활용하고, Copilot을 CLI에서 활용하거나, 커밋 메세지를 자동으로 생성합니다.
 
-## [Task 5](/Task05/README.md): Test코드 작성 
+## [Task 5](/Task05/README.md): 코드 리뷰와 리팩토링에 대한 Copilot 활용
   - Copilot을 이용해 코드 리뷰를 받고, 리팩토링을 진행합니다.
   - Prompt파일을 이용해 코드 리뷰를 위해 Copilot에게 Custom instruction을 활용하는 방법을 익힙니다.  
   - `@workspace`를 활용하는 질문을 사용해 봅니다. 
