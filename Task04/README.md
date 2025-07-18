@@ -164,9 +164,6 @@
 
 - Pull Request를 Merge하여, 기능을 완료합니다. <br>
 
-- PR Merge 후, main branch를 개발 랩탑에 clone하고, 서버를 다시 실행하여 추가된 범주 기능이 정상적으로 동작하는지 확인합니다. <br>
-  <img src="img/51.png" width="600"> <br>
-
 ## Step 5: Plant UML 다이어그램 생성
 - 생성된 코드 중 특정 부분 함수를 선택하고, Copilot에게 Plant UML 플로우 차트를 생성해 달라고 요청합니다.  <br>
   <img src="img/54.png" width="800">

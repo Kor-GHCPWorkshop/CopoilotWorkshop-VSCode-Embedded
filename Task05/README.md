@@ -75,15 +75,15 @@
 	- Ctrl + Shift + P를 눌러 명령어 팔레트를 열고, `Chat: Run Prompt File..`을 선택합니다.<br>
 
 
-## Step 2: 프롬프트 파일을 활용해 예시로 주어진 코드의 리팩토링
+## Step 3: 프롬프트 파일을 활용해 예시로 주어진 코드의 리팩토링
 - `book.c` 파일을 선택합니다. 
 - Copilot Chat에서 '/'를 입혁하고, `refactor_code.prompt.md` 파일을 선택합니다. <br>
-  <img src="img/06.png" width="400"> <br>
+  <img src="img/06.png" width="200"> <br>
   <img src="img/07.png" width="500"> <br>
   <img src="img/18.png" width="500"> <br>
 
 
-## Step 3: 변경 내용에 대한 영향 분석을 Copilot에게 질문하기 
+## Step 4: 변경 내용에 대한 영향 분석을 Copilot에게 질문하기 
 
 - 리팩토링으로 인한 코드 변경 사항에 대해 코드의 다른 부분에 어떤 영향이 있을지를 Copilot에게 질문하고 관련된 코드를 제안받습니다. <br>
 
@@ -95,10 +95,10 @@
 - 참고: `@workspace`는 Ask 모드에서 사용자가 질문한 내용에 대해 전체 코드베이스에서 관련된 파일들과 심볼들을 검색하고, 이것들을 답변에 참조합니다. (상세설명은 다음 Task06에서 다룹니다.) <br>
 
 - Copilot이 제안하는 내용을 확인합니다. <br>
-  <img src="img/10.png" width="700"> <br>
-  <img src="img/11.png" width="700"> <br> 
+  <img src="img/10.png" width="500"> <br>
+  <img src="img/11.png" width="500"> <br> 
 
-## Step 4: 성능 관점에서 리팩토링 요청
+## Step 5: 성능 관점에서 리팩토링 요청
 - src 디렉토리에 있는 `getDiscount.c` 파일을 열고, 성능 관점에서 리팩토링을 요청합니다. <br>
 - 자유롭게 `Agent` 모드를 활용 합니다. <br>
 - Chat에서 `#file`을 입력하고, `getDiscount.c` 파일을 선택합니다. <br>
@@ -106,10 +106,10 @@
 - 프롬프트 예시: `파일의 성능 관점에서 개선점을 제안해줘` <br>
 
 - 제안되는 내용과 개선 코드를 확인합니다.<br>
-  <img src="img/12.png" width="700">
+  <img src="img/12.png" width="500">
 
 
-## Step 5: 보안 문제점 분석에 대한 개선 요청
+## Step 6: 보안 문제점 분석에 대한 개선 요청
 
 - `src` 디렉토리에 있는 `vulnerable_server.c` 파일을 열고, 보안 문제점을 확인하고, 개선 방법을 요청합니다. <br>
 - 자유롭게 `Agent`, `Edit`, `Ask` 모드를 활용 합니다. <br>
@@ -118,9 +118,9 @@
 - 프롬프트 예시: `파일의 보안 문제점을 분석하고 개선할 부분을 제안해줘`
 
 - 제안되는 내용과 개선 코드를 확인합니다. <br>
-  <img src="img/13.png" width="700"> <br>
+  <img src="img/13.png" width="500"> <br>
 
-## Step 6: 프롬프트 파일을 활용해 코드 리뷰 요청
+## Step 7: 프롬프트 파일을 활용해 코드 리뷰 요청
 - 생성된 코드에 대해 프롬프트 파일을 활용해 코드 리뷰를 요청합니다. <br>
 - 질문을 위해  `Ask` 모드를 선택합니다. <br>
 - book.c 파일을 선택합니다. <br>
