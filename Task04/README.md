@@ -27,6 +27,13 @@
   - default로 기업 구성원들의 Premium Model에 대한 추가 사용은 비활성화되어 있습니다.
   - 기업 관리자가 설정을 변경하여, 구성원들이 Premium Model을 사용할 수 있도록 할 수 있습니다. (한도 설정 가능)
 
+## Google Test 로컬에 설치하기
+- 시작하기 앞서, Google Test를 로컬에 설치합니다.
+- /src/external 디렉토리에 Google Test를 설치합니다.
+
+ `git clone https://github.com/google/googletest.git` 
+
+ 
 ## Step 1: GitHub MCP Server를 통해 자동으로 GitHub 저장소에 Issue 등록하기
 * 이 Step의 실습은 선택 사항입니다. (GitHub.com 활용이 불가능한 환경이면, 이 Step은 건너뜁니다.)
 - 앞선 Task3에서 'Plan'모드를 통해 확인 한 프로젝트 빌드 절차를 확인합니다. <br>

@@ -10,6 +10,8 @@
 - Chatmode를 설정하여, Agent 모드에서 기본 제공 모드 외에 'Plan' 모드를 설정하여, Django 프로젝트를 빌드하기 위한 절차를 제안 받습니다.  
 - (선택사항) GitHub MCP Server를 설정하는 방법을 실습합니다.
 
+- Project를 시작하기 위해 https://github.com/Kor-GHCPWorkshop/copilotWorkshop-CGT-start 의 저장소를 복제하여 시작합니다.
+
 ## Step 1: Custom instructions 생성
  - **[Custom instructions란](https://code.visualstudio.com/docs/copilot/copilot-customization)** 
 - 일반적인 가이드라인이나 규칙을 정의하여 코드 생성, 코드 리뷰 수행, 또는 커밋 메시지 생성과 같은 작업을 수행합니다. Custom instructions는 AI가 작업을 수행해야 하는 조건(작업이 어떻게 수행되어야 하는지)을 설명합니다.
