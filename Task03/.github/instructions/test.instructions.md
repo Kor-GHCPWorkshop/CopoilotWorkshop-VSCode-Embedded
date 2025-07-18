@@ -6,8 +6,9 @@ applyTo: "**/*_test.cpp, **/test_*.cpp, **/tests/*.cpp"
 
 ## 테스트 프레임워크
 - **주요 프레임워크**: Google Test (C++ 기반)
+- **Google Test path**: 프로젝트의 `src/external/googletest` 디렉토리 
 - **대상 언어**: C 함수를 C++에서 테스트
-- **데이터베이스**: SQLite 인메모리 데이터베이스 (`:memory:`)
+- **데이터베이스**: SQLite3 Amalgamation 프로젝트의 `src/external/sqlite/` 디렉토리 
 - **빌드 시스템**: CMake
 
 ## 테스트 파일 구조

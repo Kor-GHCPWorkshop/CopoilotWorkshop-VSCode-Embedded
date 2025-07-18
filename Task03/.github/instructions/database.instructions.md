@@ -2,9 +2,10 @@
 applyTo: "**/*.sqlite3, **/*.db, **/*.sqlite"
 ---
 
-# SQLite 데이터베이스 가이드 (C 기반 도서 대출 관리 프로그램)
+# SQLite3 Amalgamation 데이터베이스 (C 기반 도서 대출 관리 프로그램)
 
 ## 1. 데이터베이스 파일 위치
+- SQLite3 Amalgamation 파일은 프로젝트의 `src/external/sqlite/` 디렉토리에 위치합니다.
 
 - 데이터베이스 파일은 프로젝트 내의 별도 디렉토리(`database/`)에 저장합니다.
   - 예: `database/library.db`

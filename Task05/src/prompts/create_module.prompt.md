@@ -1,7 +1,7 @@
 ---
 mode: 'agent'
 model: Claude Sonnet 4
-tools: ['changes', 'codebase', 'githubRepo', 'runTests', 'testFailure', 'cpp']
+tools: ['changes', 'codebase', 'githubRepo', 'runTests', 'testFailure', 'fetch', 'filesystem', 'Azure MCP Server', 'cpp']
 description: "C모듈을 생성합니다."
 ---
 

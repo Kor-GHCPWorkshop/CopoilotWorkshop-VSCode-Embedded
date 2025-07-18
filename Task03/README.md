@@ -24,58 +24,58 @@
 
     
 	### 1-1. `.github/copilot-instructions.md` 파일 생성
-	  - Copilot은 `.github/copilot-instructions.md` 파일을 사용하여, 코드 생성 지침을 Markdown 형식으로 작성합니다. 
-	  - 이 파일은 모든 챗 요청에 자동으로 포함되며, Copilot을 지원하는 모든 에디터와 IDE에서 지원됩니다.
-	  - 이 파일을 사용하여 모든 코드 생성 작업에 적용되는 일반적인 코딩 관행, 선호 기술, 프로젝트 요구 사항을 정의합니다.
-	  - 예시로 제공된 파일을 참고하여, 프로젝트에 맞는 지침을 작성합니다.
-      - [copilot-instructions예](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot?tool=vscode#repository-custom-instructions-example) <br>
+	- Copilot은 `.github/copilot-instructions.md` 파일을 사용하여, 코드 생성 지침을 Markdown 형식으로 작성합니다. 
+	- 이 파일은 모든 챗 요청에 자동으로 포함되며, Copilot을 지원하는 모든 에디터와 IDE에서 지원됩니다.
+	- 이 파일을 사용하여 모든 코드 생성 작업에 적용되는 일반적인 코딩 관행, 선호 기술, 프로젝트 요구 사항을 정의합니다.
+	- 예시로 제공된 파일을 참고하여, 프로젝트에 맞는 지침을 작성합니다.
+	- [copilot-instructions예](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot?tool=vscode#repository-custom-instructions-example) <br>
 
-	  - <참고> VS Code의 설정 메뉴에서 관련 설정 <br>
-          <img src="img/01.png" width="600"> <br>
-          <img src="img/02.png" width="800"><br>
+	- <참고> VS Code의 설정 메뉴에서 관련 설정 <br>
+		<img src="img/01.png" width="600"> <br>
+		<img src="img/02.png" width="800"><br>
 
 	### 1-2. `.instructions.md` 파일 생성
-      - 특정 작업에 대한 사용자 정의 지침을 저장하기 위해 하나 이상의 `.instructions.md` 파일을 생성할 수 있습니다. 예를 들어, 다양한 프로그래밍 언어, 프레임워크 또는 프로젝트 유형에 대한 지침 파일을 생성할 수 있습니다. VS Code는 모든 채팅 요청에 지침 파일을 자동으로 추가하거나, 특정 파일에 대해 지침이 자동으로 적용되도록 지정할 수 있습니다. 또는 채팅 프롬프트에 지침 파일을 수동으로 첨부할 수도 있습니다.
-	  - Workspace 또는 User 프로필에 하나 이상의 지침 파일을 생성하여 사용할 수 있습니다.
-	  
-	    - 워크스페이스 지침 파일: 워크스페이스 내에서만 사용할 수 있으며, 워크스페이스의 .github/instructions 폴더에 저장됩니다.
-		- User 프로필 지침 파일: 여러 워크스페이스에서 사용할 수 있으며, 현재 VS Code 프로필에 저장됩니다.
+	- 특정 작업에 대한 사용자 정의 지침을 저장하기 위해 하나 이상의 `.instructions.md` 파일을 생성할 수 있습니다. 예를 들어, 다양한 프로그래밍 언어, 프레임워크 또는 프로젝트 유형에 대한 지침 파일을 생성할 수 있습니다. VS Code는 모든 채팅 요청에 지침 파일을 자동으로 추가하거나, 특정 파일에 대해 지침이 자동으로 적용되도록 지정할 수 있습니다. 또는 채팅 프롬프트에 지침 파일을 수동으로 첨부할 수도 있습니다.
+	- Workspace 또는 User 프로필에 하나 이상의 지침 파일을 생성하여 사용할 수 있습니다.
 	
-	  - Instructions 파일 구조
-	    - 헤더 (선택사항)
-		  - description: 지침 파일에 대한 설명을 작성합니다. Chat view에서 마우스를 올리면 이 내용이 표시됩니다.
-		  - applyTo: 지침 파일이 적용되는 파일을 지정합니다. glob 패턴을 사용하여 특정 파일에만 적용할 수 있습니다.
-		  - 예시: 
-		    ```markdown
-		    # My Custom Instructions
-		    description: This file contains custom instructions for my project.
-		    applyTo: '**/*.py'
-		    ```		
+	- 워크스페이스 지침 파일: 워크스페이스 내에서만 사용할 수 있으며, 워크스페이스의 .github/instructions 폴더에 저장됩니다.
+	- User 프로필 지침 파일: 여러 워크스페이스에서 사용할 수 있으며, 현재 VS Code 프로필에 저장됩니다.
+	
+	- Instructions 파일 구조
+	- 헤더 (선택사항)
+		- description: 지침 파일에 대한 설명을 작성합니다. Chat view에서 마우스를 올리면 이 내용이 표시됩니다.
+		- applyTo: 지침 파일이 적용되는 파일을 지정합니다. glob 패턴을 사용하여 특정 파일에만 적용할 수 있습니다.
+		- 예시: 
+		```markdown
+		# My Custom Instructions
+		description: This file contains custom instructions for my project.
+		applyTo: '**/*.py'
+		```		
 
-	    - Body
-		  - 마크 다운 형식의 자연어로 작성합니다. Heading, Lists, Code blocks 등을 사용하여 지침을 작성합니다.
-		  - 다른 instructions 파일을 링크로 참조할 수 있습니다. 
+	- Body
+		- 마크 다운 형식의 자연어로 작성합니다. Heading, Lists, Code blocks 등을 사용하여 지침을 작성합니다.
+		- 다른 instructions 파일을 링크로 참조할 수 있습니다. 
 
-	    - [instructions 파일 예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions-examples) <br>	  
+	- [instructions 파일 예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions-examples) <br>	  
 
-		- Default로 .github/instructions 디렉토리를 사용하고, VS Code의 설정 메뉴에서 사용자가 원하는 디렉토리를 추가 지정할 수 있습니다. <br>
-		  <img src="img/03.png" width="600"> <br>
+	- Default로 .github/instructions 디렉토리를 사용하고, VS Code의 설정 메뉴에서 사용자가 원하는 디렉토리를 추가 지정할 수 있습니다. <br>
+		<img src="img/03.png" width="600"> <br>
 
 	### 1-3. VS Code 설정 : settings.json
-	  - VS Code의 설정 메뉴에서 아래 3가지 설정을 통해, Custom instructions 파일을 지정할 수 있습니다. 
-	  - "text", 혹은 "file"을 지정할 수 있습니다. 
+	- VS Code의 설정 메뉴에서 아래 3가지 설정을 통해, Custom instructions 파일을 지정할 수 있습니다. 
+	- "text", 혹은 "file"을 지정할 수 있습니다. 
 
-	  - ** 이전 VS Code의 설정에서 `codeGeneration`과 `testGeneration` 설정을 VS Code 1.102 버전부터 deprecated 되었습니다. 
+	- ** 이전 VS Code의 설정에서 `codeGeneration`과 `testGeneration` 설정을 VS Code 1.102 버전부터 deprecated 되었습니다. 
 
-	 	| Instruction 유형                | 설정 이름                                           |
-		|---------------------------------|----------------------------------------------------|
-		| 코드 리뷰                       | `github.copilot.chat.reviewSelection.instructions` |
-		| 커밋 메시지 생성                | `github.copilot.chat.commitMessageGeneration.instructions` |
-		| 풀 리퀘스트 제목 및 설명 생성   | `github.copilot.chat.pullRequestDescriptionGeneration.instructions` |
-		| 코드 생성 (Deprecated)          | `github.copilot.chat.codeGeneration.instructions` |
-		| 테스트 생성 (Deprecated)        | `github.copilot.chat.testGeneration.instructions` |
+	| Instruction 유형                | 설정 이름                                           |
+	|---------------------------------|----------------------------------------------------|
+	| 코드 리뷰                       | `github.copilot.chat.reviewSelection.instructions` |
+	| 커밋 메시지 생성                | `github.copilot.chat.commitMessageGeneration.instructions` |
+	| 풀 리퀘스트 제목 및 설명 생성   | `github.copilot.chat.pullRequestDescriptionGeneration.instructions` |
+	| 코드 생성 (Deprecated)          | `github.copilot.chat.codeGeneration.instructions` |
+	| 테스트 생성 (Deprecated)        | `github.copilot.chat.testGeneration.instructions` |
 
-	  - [설정예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_specify-custom-instructions-in-settings) <br>
+	- [설정예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_specify-custom-instructions-in-settings) <br>
 
 ## Step 2: Custom instructions 파일 생성, 수정하기 
 - Custom instructions를 생성하기 위해, Copilot Chat창의 우측 상단에 톱니 바퀴 아이콘을 클릭하여 설정 메뉴를 엽니다. <br>
@@ -156,7 +156,7 @@
 - Git commit 메세지 창 우측의 '...' 버튼을 클릭하고 `Remote > Add Remote`를 선택하여, 저장소를 추가합니다. <br>
  <img src="img/12.png" width="400"> <br>
 
-## Step 5: GitHub MCP Server 설정하기
+## (선택사항) Step 5: GitHub MCP Server 설정하기
 - MCP Server에 대한 설명은 [Task 8](../Task08/README.md)에서 자세히 다룹니다.
 - 현재 Task에서는 GitHub MCP Server를 설정하여, Copilot Chat에서 GitHub MCP Server를 이용해, GitHub 저장소에 Issue를 등록할 수 있도록 합니다. <br>
 - GitHub MCP Server(https://github.com/github/github-mcp-server) 는 GitHub에서 제공하는 공식 MCP 서버로, GitHub의 각종 다양한 기능을 제공합니다. <br>
@@ -174,17 +174,6 @@
 ## Step 6: 저장
 - Ctrl + Shift + P를 눌러 명령어 팔레트를 열고, `File: Save All Files`를 선택합니다. <br>
 
-## Step 7: Plant UML 다이어그램 생성
-- 생성된 코드 중 특정 부분 함수를 선택하고, Copilot에게 Plant UML 플로우 차트를 생성해 달라고 요청합니다.  <br>
-  <img src="img/27.png" width="800">
-  <img src="img/28.png" width="600">
-
-- 생성된 Plant UML 플로우 챠트를 파일로 생성합니다. <br>
-  <img src="img/33.png" width="800">
-
-- 플로우 챠트를 확인합니다. <br>
-  <img src="img/34.png" width="500">
-  <img src="img/35.png" width="800">
 
 ## 지식 확인
 - 이번 Task에서는 도서대출관리 프로그램을 시작하기 위해, 

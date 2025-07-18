@@ -73,10 +73,6 @@
 	<img src="img/14.png" width="500"> <br>
 	<img src="img/15.png" width="500"> <br>
   
-  - 에러가 수정되었습니다. <br>
-	<img src="img/16.png" width="500"> <br>
-	<img src="img/17.png" width="500"> <br>
-
 - 만약 진행 과정에서 아래와 같이 중단되면, 다시 진행 하라고 요청합니다. <br>
   <img src="img/18.png" width="400"> <br>
   <img src="img/19.png" width="400"> <br>
@@ -114,7 +110,7 @@
 
 ### 3-2. Review guideline 설정하기
 - 저장소 settings에서 왼편의 `Copilot > Code review` 메뉴를 선택합니다. <br>
-  <img src="img/41.png" width="600"> <br>
+  <img src="img/41.png" width="400"> <br>
   - 기본적으로 copilot-instructions.md 파일을 참조합니다. 
 - Create guideline 버튼을 클릭하여, Copilot이 코드 리뷰를 수행할 때 참고할 guideline을 작성합니다. <br>
   <img src="img/42.png" width="400"> <br>
@@ -171,8 +167,20 @@
 - PR Merge 후, main branch를 개발 랩탑에 clone하고, 서버를 다시 실행하여 추가된 범주 기능이 정상적으로 동작하는지 확인합니다. <br>
   <img src="img/51.png" width="600"> <br>
 
+## Step 5: Plant UML 다이어그램 생성
+- 생성된 코드 중 특정 부분 함수를 선택하고, Copilot에게 Plant UML 플로우 차트를 생성해 달라고 요청합니다.  <br>
+  <img src="img/54.png" width="800">
+  <img src="img/55.png" width="600">
 
-## Step 5: Commit message 자동 생성 (Custom instruction으로 원하는 형태로 커밋 메세지 생성하기)
+- 생성된 Plant UML 플로우 챠트를 파일로 생성합니다. <br>
+  <img src="img/56.png" width="500">
+
+- 플로우 챠트를 확인합니다. 확인을 위해서는 '[PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)' 확장기능 설치가 필요합니다. <br>
+  <img src="img/57.png" width="400">
+  <img src="img/58.png" width="600">
+
+
+## Step 6: Commit message 자동 생성 (Custom instruction으로 원하는 형태로 커밋 메세지 생성하기)
 - `.vscode/settings.json` 파일을 열고 아래와 같이 입력합니다.  <br>
   ```json
   - "github.copilot.chat.commitMessageGeneration.instructions": [

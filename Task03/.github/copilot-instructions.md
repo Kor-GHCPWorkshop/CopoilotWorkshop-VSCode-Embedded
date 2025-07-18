@@ -5,12 +5,12 @@ applyTo: "**"
 # 작은 도서관 시스템 
 
 ## 프로젝트 개요
-C 기반 도서관 관리 시스템으로 SQLite 데이터베이스를 사용하여 도서, 회원, 대출/반납을 관리합니다.
+C 기반 도서관 관리 시스템으로 SQLite3 Amalgamation 데이터베이스를 사용하여 도서, 회원, 대출/반납을 관리합니다.
 
 # 주요 기능:
 
 - 도서 등록, 검색, 수정, 삭제
-- 회원 관리 : 등록, 정보 수정, 연체 상태 확인인
+- 회원 관리 : 등록, 정보 수정, 연체 상태 확인
 - 대출/반납 프로세스
 
 
@@ -26,17 +26,25 @@ C 기반 도서관 관리 시스템으로 SQLite 데이터베이스를 사용하
 ## 빌드 시스템
 - **주요 빌드 도구**: CMake (권장) 
 
-## 데이터베이스 패턴
+## 데이터베이스 
+- **CMakeLists.txt에 추가** : CMakeLists.txt에 SQLite3 Amalgamation 추가 
+  - SQLite3 Amalgamation 파일은 프로젝트 내 `src/external/sqlite/` 디렉토리에 위치
+  
+  add_library(sqlite3 STATIC external/sqlite/sqlite3.c)
+  target_include_directories(sqlite3 PUBLIC external/sqlite)
+
 - **초기화 순서**: `initialize_database()` → `create_tables()` → `create_indexes()`
 - **연결 관리**: `get_db_connection()`으로 전역 연결 획득
 - **쿼리 실행**: `execute_query()`와 `prepare_statement()` 사용
-- **테스트용 DB**: `:memory:` 사용으로 격리된 테스트 환경
 
-## 테스트 패턴
-- **테스트 클래스**: `BookTest`, `MemberTest` 등 기능별 테스트 클래스
-- **SetUp/TearDown**: 각 테스트마다 인메모리 DB 초기화/정리
-- **헬퍼 함수**: `createTestBook()` 등 테스트 데이터 생성 유틸리티
-- **C++에서 C 함수 호출**: `extern "C" { #include "..." }` 패턴
+## 테스트
+- **테스트 프레임워크**: Google Test
+- **Google Test 위치** : 프로젝트 내 `src/external/googletest/` 디렉토리에 위치
+- **테스트 구조**: 각 모듈별로 `tests/` 디렉토리에 테스트 파일 생성
+  - `tests/book_tests.cpp` - 도서 관련 테스트
+  - `tests/member_tests.cpp` - 회원 관련 테스트
+  - `tests/loan_tests.cpp` - 대출/반납 관련 테스트
+  
 
 ## 네이밍 컨벤션
 - **함수**: snake_case with verbs (`add_book`, `get_book_by_id`)
