@@ -37,39 +37,30 @@
  - 이미지를 Copilot Chat에 컨텍스트로 제공하고(Vision기능), 이미지를 통해 코드를 제안받아 봅니다. (Vision)
 
 ## [Task 3](/Task03/README.md): 도서 대출 관리 프로그램 만들기 (Part 1)
- - 실제 도서대출 관리 프로그램을 빌드하면서 GitHub Copilot의 다양한 기능을 활용하는 방법을 익힙니다.
- - 기본 GPT-4o 모델 외에, 다른 모델을 활용해 봅니다. 
- - Copilot에게 Custom instruction을 제공하여 원하는 형태로 코드 제안을 받는 방법을 익힙니다.
- - Copilot chat의 'Ask', 'Edit', 'Agent' 모드를 각각 활용하여 모듈을 구성해 보고, 차이점을 이해합니다.
-
-## 설명: GitHub Copilot Prompt Engineering
- - GitHub Copilot을 활용할 때의 프롬프트 엔지니어링 방법에 대해 설명 드립니다. 
- - [Best practices for using GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/prompt-crafting)
- - [IDE에서 GitHub Copilot 사용 팁, 트릭과 모범 사례](https://github.blog/developer-skills/github/how-to-use-github-copilot-in-your-ide-tips-tricks-and-best-practices/)
- - [프롬프트엔지니어링과 LMM에 대한 개발자 가이드](https://github.blog/ai-and-ml/generative-ai/prompt-engineering-guide-generative-ai-llms/)
- - [Introduction to prompt engineering with GitHub Copilot](https://learn.microsoft.com/training/modules/introduction-prompt-engineering-with-github-copilot//?WT.mc_id=academic-113596-abartolo)
-- [GitHub Copilot에게 더 좋은 프롬프트를 작성하기 위한 예제와 모범사례](https://github.blog/developer-skills/github/how-to-write-better-prompts-for-github-copilot/)
-
+- Copilot에게 Custom instruction을 제공하여 원하는 형태로 코드 제안을 받습니다.
+- Chat Mode를 설정하여, Agent 모드에서 기본 제공 모드 외에 원하는 커스텀 모드를 설정해 봅니다.
+- (선택사항) GitHub MCP Server를 설정하는 방법을 익힙니다. (이후 Task 4에서 실습)
 
 ## [Task 4](/Task04/README.md): 도서 대출 관리 프로그램 만들기 (Part 2)
-  - Part 1에서 생성된 도서 대출 관리 프로그램에 Copilot을 활용해 단위 테스트 코드를 생성성하고, 테스트 시 에러에 대한 트러블 슈팅에 Copilot을 활용하고, Copilot을 CLI에서 활용하거나, 커밋 메세지를 자동으로 생성합니다.
+ - 이전 Task03(Part 1)에서 생성된 커스텀 instructions와 커스텀 Chat mode를 활용하여 도서대출관리 프로그램을 실제로 빌드합니다. 
+- (선택사항) GitHub.com이 활용 가능한 경우, 커스텀 모드인 Plan 모드를 사용해 Planning된 내용을, GitHub MCP Server를 활용하여, Copilot Chat에서 GitHub 저장소에 Issue를 등록해 봅니다.  
+- (선택사항) GitHub.com이 활용 가능한 경우, Coding Agent를 활용해 기능을 구현해 봅니다. (프리미엄 리퀘스트 사용)
+  - Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Copilot 자동 Code Review를 통해 코드 리뷰를 받아 봅니다. (프리미엄 리퀘스트 사용)
 
 ## [Task 5](/Task05/README.md): 코드 리뷰와 리팩토링에 대한 Copilot 활용
-  - Copilot을 이용해 코드 리뷰를 받고, 리팩토링을 진행합니다.
-  - Prompt파일을 이용해 코드 리뷰를 위해 Copilot에게 Custom instruction을 활용하는 방법을 익힙니다.  
-  - `@workspace`를 활용하는 질문을 사용해 봅니다. 
-  - 코드 리팩토링과, 새로운 모듈 생성에 대한 Prompt 파일을 생성하고, Copilot에게 코드 리팩토링을 요청하여 새로운 모듈 생성을 진행해 봅니다. 
+- Prompt 파일에 대해 알아보고, 프롬프트 파일을 생성하여 코드 리뷰를 받고, 리팩토링에 활용해 봅니다. 
+- 효율적인 프롬프트 작성과 컨텍스트 활용 방법을 익힙니다. 
+- Copilot Chat에 추가할 수 있는 다양한 컨텍스트들에 대해 확인합니다. 
+- Copilot을 활용해 Commit message를 자동 생성합니다.
 
-## 설명: Copilot Extension이란?
-  - [Copilot Extension](https://github.com/features/copilot/extensions)은 Copilot Chat에 추가적인 기능을 제공하는 확장 프로그램입니다.
-  - [GitHub Marketplace](https://github.com/marketplace?type=apps&copilot_app=true)에 올라와 있는 확장 프로그램을 Organization의 관리자가 설치하여 사용할 수 있습니다.
-  - 자체적인 Extension을 다양한 방법 (API, RAG, 자체 모델 사용등)으로 구축하여 활용할 수 있습니다. 
-  ** Copilot Extension을 Org단위로 사용하기 위해서는 GitHub Enterprise 라이센스가 추가로 필요합니다. 
+## [Task 6](/Task06/README.md): 프롬프트와 컨텍스트 사용
+- 효율적인 프롬프트 작성과 컨텍스트 활용 방법을 익힙니다. 
+- Copilot Chat에 추가할 수 있는 다양한 컨텍스트들에 대해 확인합니다. 
+- Copilot을 활용해 Commit message를 자동 생성합니다.
 
-## [Task 6](/Task06/README.md): Copilot Extension 실습
-  - GitHub Copilot의 Extension을 활용하는 실습을 진행합니다.
-  - GitHub Copilot의 Extension의 2가지 생성 방법(Skillset, Agent)을 이해하고, 실습을 진행합니다.
+## [Task 7](/Task07/README.md): CI/CD 파이프라인 실습 
+  - 주어진 파이프라인에 대한 설명과 변환등을 GitHub Copilot을 사용하여 실습하는 예제입니다.
 
-
-
+## [Task 8](/Task08/README.md): MCP (Model Context Protocol) 활용 실습
+ - VS Code에서 Model Context Protocol 서버를 설정하고, 활용해 봅니다.
 
