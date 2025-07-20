@@ -10,7 +10,17 @@
 - Chatmode를 설정하여, Agent 모드에서 기본 제공 모드 외에 'Plan' 모드를 설정하여, Django 프로젝트를 빌드하기 위한 절차를 제안 받습니다.  
 - (선택사항) GitHub MCP Server를 설정하는 방법을 실습합니다.
 
-- Project를 시작하기 위해 https://github.com/Kor-GHCPWorkshop/copilotWorkshop-CGT-start 의 저장소를 복제하여 시작합니다.
+## Step 1: 새로운 프로젝트 시작하기
+- Project를 시작하기 위해 https://github.com/Kor-GHCPWorkshop/copilotWorkshop-CGT-start 의 저장소를 다운로드 합니다. 
+ <img src="img/34.png" width="400"> <br>
+
+- VS Code에서 새로운 프로젝트를 생성합니다.
+- 파일 - New window를 선택하고, 다운로드 받아 압축 해제한 폴더를 선택합니다.
+ <img src="img/33.png" width="400"> <br>
+
+- Google Test를 로컬에 설치합니다. `/src/external` 디렉토리에 Google Test를 설치합니다.
+
+ - `git clone https://github.com/google/googletest.git` 
 
 ## Step 1: Custom instructions 생성
 - [Custom instructions 설명](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot?versionId=enterprise-cloud%40latest&tool=jetbrains#about-repository-custom-instructions-for-github-copilot-chat)
@@ -158,13 +168,6 @@
   <img src="img/10.png" width="400"> <br>
 
 - 실습 디렉토리에 [plan.chatmode.md](.github/plan.chatmode.md) 파일의 내용을 참조하여 plan 모드를 생성합니다. <br>
-
-### 4-3. 커스텀 Chat mode 실행
-- Copilot Chat에서 `Plan` 모드를 선택합니다. <br>
-  <img src="img/11.png" width="200"> <br>
-
-  - Plan 모드에서 `이 프로젝트를 구현하기 위한 세부 절차를 단계별로 제안해 줘`라고 요청합니다. <br>
-
 
 ## (선택사항) Step 5: GitHub 저장소와 연동하기
 - 이 Step의 실습은 선택 사항입니다. (GitHub.com 활용이 불가능한 환경이면, 이 Step은 건너뜁니다.)

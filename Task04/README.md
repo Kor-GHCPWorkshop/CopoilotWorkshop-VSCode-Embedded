@@ -27,20 +27,17 @@
   - default로 기업 구성원들의 Premium Model에 대한 추가 사용은 비활성화되어 있습니다.
   - 기업 관리자가 설정을 변경하여, 구성원들이 Premium Model을 사용할 수 있도록 할 수 있습니다. (한도 설정 가능)
 
-## Google Test 로컬에 설치하기
-- 시작하기 앞서, Google Test를 로컬에 설치합니다.
-- /src/external 디렉토리에 Google Test를 설치합니다.
+## Step 1: Copilot에게 프로젝트 구성 절차 요청하기
+- Copilot Chat에서 `Plan` 모드를 선택합니다. <br>
+  <img src="img/59.png" width="200"> <br>
 
- `git clone https://github.com/google/googletest.git` 
+  - Plan 모드에서 `이 프로젝트를 구현하기 위한 세부 절차를 단계별로 제안해 줘`라고 요청합니다. <br>
+  <img src="img/01.png" width="400"> <br>
+  <img src="img/02.png" width="400"> <br>
+  <img src="img/03.png" width="400"> <br>
 
- 
-## Step 1: GitHub MCP Server를 통해 자동으로 GitHub 저장소에 Issue 등록하기
+### (선택사항) GitHub MCP Server를 통해 자동으로 GitHub 저장소에 Issue 등록하기
 * 이 Step의 실습은 선택 사항입니다. (GitHub.com 활용이 불가능한 환경이면, 이 Step은 건너뜁니다.)
-- 앞선 Task3에서 'Plan'모드를 통해 확인 한 프로젝트 빌드 절차를 확인합니다. <br>
- <img src="img/01.png" width="400"> <br>
- <img src="img/02.png" width="400"> <br>
- <img src="img/03.png" width="400"> <br>
-
 
 - 위 절차를 GitHub 저장소에 '일감'(이슈)으로 등록하기 위해, Copilot Chat에서 'Agent' 모드를 선택하고, 아래와 같이 요청합니다. 
   - `위 각 구현단계를 각각 현재 워크스페이스의 origin 리모트 저장소에 이슈로 등록해줘`
@@ -54,17 +51,7 @@
 - GitHub 저장소에서 생성된 Issue를 확인합니다. <br>
    <img src="img/06.png" width="400"> <br>
 
-## Step 2: Copilot Agent 모드에서 프로젝트 생성하기 
-### 2-1. GitHub.com이 활용 가능한 경우
-- 앞선 Task3에서 'Plan'모드를 통해 확인 한 프로젝트 빌드 절차를 확인합니다. <br>
- <img src="img/01.png" width="400"> <br>
- <img src="img/02.png" width="400"> <br>
- <img src="img/03.png" width="400"> <br>
- 
-- Copilot Chat에서 `Agent` 모드를 선택하고, 아래와 같이 요청합니다. <br>
-  - `자, 이제 이 프로젝트의 구현을 시작하자. 현재 워크 스페이스에서 위에서 제시된 각 단계별로 구현을 진행해 줘. 단계별로 완료된 내용을 GitHub의 origin 리모트 저장소에 해당 이슈에 커맨트하고 해당 이슈를 close 해 줘.`
-
-### 2-2. GitHub.com이 활용 불가능한 경우
+## Step 2: Agent 모드에서 프로젝트 생성하기 
 - Copilot Chat에서 `Agent` 모드를 선택하고, 아래와 같이 요청합니다. 
   - `자, 이제 이 프로젝트의 구현을 시작하자. 현재 워크 스페이스에서 위에서 제시된 각 단계별로 구현을 진행해 줘. 단계별로 완료된 내용을 커밋하고, 커밋 메시지를 작성해 줘.`
 
@@ -76,12 +63,7 @@
   <img src="img/10.png" width="400"> <br>
   <img src="img/11.png" width="400"> <br>
 
-
-- GitHub.com 저장소에 이슈들도 확인 합니다. <br>
-  <img src="img/12.png" width="400"> <br>
-  <img src="img/13.png" width="400"> <br>
-
-  - Agent 모드가 진행과정에서 에러가 발생하면, 스스로 에러를 수정합니다. <br> 
+- Agent 모드가 진행과정에서 에러가 발생하면, 스스로 에러를 수정합니다. <br> 
 	<img src="img/14.png" width="500"> <br>
 	<img src="img/15.png" width="500"> <br>
   
@@ -102,11 +84,30 @@
   
 - `Ctrl + Shift + P`를 눌러 명령어 팔레트를 열고, `File: Save All Files`를 선택합니다. <br>
 
+### (선택사항) GitHub.com이 활용 가능한 경우
+- Copilot Chat에서 `Agent` 모드를 선택하고, 아래와 같이 요청합니다. <br>
+  - `자, 이제 이 프로젝트의 구현을 시작하자. 현재 워크 스페이스에서 위에서 제시된 각 단계별로 구현을 진행해 줘. 단계별로 완료된 내용을 GitHub의 origin 리모트 저장소에 해당 이슈에 커맨트하고 해당 이슈를 close 해 줘.`
 
-## (선택사항) Step 3: Copilot을 통해 자동 코드 리뷰 받기
-### 3-1 Code Review 룰 설정하기
+- MCP를 통해 GitHub.com 저장소에 이슈들이 자동으로 업데이트 되는 것을 확인합니다. <br>
+  <img src="img/12.png" width="400"> <br>
+  <img src="img/13.png" width="400"> <br>
+
+  
+## Step 3: 추가 기능 구현하기 
+- Copilot Chat에서 `Agent` 모드를 선택하고, 아래와 같이 요청합니다. <br>
+
+  ```
+  자, 이제 새로운 기능을 추가하려고 한다. 현재 워크스페이스에 아래의 기능을 구현하고, 테스트 코드 생상하여 실행여부 확인해줘.
+  - 각 개발 항목들에 대해서 변경 내용을 커밋하고, 커밋 메시지를 작성해 줘.
+  - 연체된 도시에 대해 연체 1일당 2일씩 반출 불가 처리하는 기능 
+  - 연체된 총 날짜에 대해, 반출 불가 날짜 계산해서 리포트하는 기능
+  ```
+
+### (선택사항) Coding Agent 활용하여 기능 구현하기
+
+#### 먼저, Copilot을 통한 자동 코드 리뷰 설정 (Code Review Rule 설정하기)
 - 이 기능은 GitHub Enterprise (혹은 Team) 플랜을 사용하는 저장소에서 가능한 기능이며, `Premium 리퀘스트`가 사용되는 기능입니다.
-- 아래 Step 5 진행에 앞서, Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Copilot 자동 Code Review를 통해 코드 리뷰를 받도록 구성합니다. 
+- 실제 구현에 앞서, 먼저 Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Coding Agent가 PR을 생성했을 때, Copilot 자동 Code Review를 통해 코드 리뷰를 받도록 구성합니다. 
 - 현재 작업중이 워크 스페이스의 리모트 저장소인, GitHub.com상의 저장소로 이동하여, 저장소의 Settings로 이동합니다. <br>
 - Settings 메뉴에서 왼편의 `Rues > Rulesets` 메뉴를 선택합니다. <br>
   <img src="img/28.png" width="600"> <br>
@@ -120,14 +121,7 @@
   <img src="img/32.png" width="400"> <br>
 - `Save changes` 버튼을 클릭하여 저장합니다. <br>
 
-### 3-2. Review guideline 설정하기
-- 저장소 settings에서 왼편의 `Copilot > Code review` 메뉴를 선택합니다. <br>
-  <img src="img/41.png" width="400"> <br>
-  - 기본적으로 copilot-instructions.md 파일을 참조합니다. 
-- Create guideline 버튼을 클릭하여, Copilot이 코드 리뷰를 수행할 때 참고할 guideline을 작성합니다. <br>
-  <img src="img/42.png" width="400"> <br>
-
-## (선택사항) Step 4: Coding Agent를 활용해 기능 추가하기
+#### Coding Agent를 활용해 기능 추가하기
 - GitHub.com이 활용 가능한 경우, Copilot Chat에서 아래의 요청을 통해 Coding Agent를 활용해 기능을 추가해 봅니다. 
 - VS Code에서 GitHub Pull Requests 확장 프로그램을 설치합니다. <br>
 - Copilot Chat에서 `Ask` 모드를 선택하고, 아래와 같이 요청합니다.
@@ -135,6 +129,7 @@
   ```
   #copilotCodingAgent 자, 이제 새로운 기능을 추가하려고 한다. 현재 워크스페이스의 origin 리모트 저장소에 아래의 기능을 구현하기 위한 PR을 생성해줘.
   - 연체된 도시에 대해 연체 1일당 2일씩 반출 불가 처리하는 기능 
+  - 연체된 총 날짜에 대해, 반출 불가 날짜 계산해서 리포트하는 기능
  
   ```
   <img src="img/33.png" width="400"> <br>
@@ -152,7 +147,7 @@
   - 수동으로 Copilot을 Reviewer로 추가할 수 있습니다. <br>
   <img src="img/40.png" width="400"> <br>
 
-### 4-1. Copilot review된 부분 다시 Copilot에게 수정 요청하기
+#### Copilot review된 부분 다시 Copilot에게 수정 요청하기
 
 - Copilot이 리뷰한 부분을 다시 Copilot에게 수정 요청할 수 있습니다.
 - Pull Request에서 `Files changed` 탭을 선택하고, Copilot이 리뷰한 부분을 확인합니다. <br>
@@ -176,7 +171,7 @@
 
 - Pull Request를 Merge하여, 기능을 완료합니다. <br>
 
-## Step 5: Plant UML 다이어그램 생성
+## Step 4: Plant UML 다이어그램 생성
 - 생성된 코드 중 특정 부분 함수를 선택하고, Copilot에게 Plant UML 플로우 차트를 생성해 달라고 요청합니다.  <br>
   <img src="img/54.png" width="800">
   <img src="img/55.png" width="600">
@@ -189,7 +184,7 @@
   <img src="img/58.png" width="600">
 
 
-## Step 6: Commit message 자동 생성 (Custom instruction으로 원하는 형태로 커밋 메세지 생성하기)
+## Step 5: Commit message 자동 생성 (Custom instruction으로 원하는 형태로 커밋 메세지 생성하기)
 - `.vscode/settings.json` 파일을 열고 아래와 같이 입력합니다.  <br>
   ```json
   - "github.copilot.chat.commitMessageGeneration.instructions": [
