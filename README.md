@@ -14,7 +14,7 @@
 - VS Code 및 GitHub Copilot 플러그인은 **최신 버전으로 업데이트 되어 있어야 합니다.**
 
   ### 언어 및 빌드
-  C, CMake, SQLite
+  C, CMake, H2 데이터베이스, Google Test
   [VS Code에서 C/C++ Extension Pack을 설치합니다.](https://code.visualstudio.com/docs/cpp/config-mingw)
 
 ## 설명: GitHub Copilot 미리보기

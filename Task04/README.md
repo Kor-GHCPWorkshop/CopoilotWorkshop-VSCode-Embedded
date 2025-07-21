@@ -29,7 +29,7 @@
 
 ### 현재 나의 Premium request 사용량 확인하기
 - VS Code 우측 하단의 `Copilot` 아이콘을 클릭하고, `Usage`부분에서 확인합니다. <br>
-  <img src="img/60.png" width="400"> <br>
+  <img src="img/60.png" width="200"> <br>
 
 ## Step 1: Copilot에게 프로젝트 구성 절차 요청하기
 - Copilot Chat에서 `Plan` 모드를 선택합니다. <br>

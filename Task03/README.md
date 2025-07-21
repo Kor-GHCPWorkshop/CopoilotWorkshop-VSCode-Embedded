@@ -15,7 +15,7 @@
  <img src="img/34.png" width="400"> <br>
 
 - VS Code에서 새로운 프로젝트를 생성합니다.
-- 파일 - New window를 선택하고, 다운로드 받아 압축 해제한 폴더를 선택합니다.
+- 파일 - New window를 선택하고, 다운로드 받아 압축 해제한 폴더를 선택합니다.<br>
  <img src="img/33.png" width="400"> <br>
 
 - Google Test를 로컬에 설치합니다. `/src/external` 디렉토리에 Google Test를 설치합니다.
