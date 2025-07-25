@@ -1,4 +1,4 @@
-# Task 8: MCP (Model Context Protocol) 활용 실습
+# Task87: MCP (Model Context Protocol) 활용 실습
 
 ## Use case: 
 - VS Code에서 Model Context Protocol 서버를 설정하고, 실습하는 예제입니다.

@@ -47,19 +47,21 @@
 - (선택사항) GitHub.com이 활용 가능한 경우, Coding Agent를 활용해 기능을 구현해 봅니다. (프리미엄 리퀘스트 사용)
   - Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Copilot 자동 Code Review를 통해 코드 리뷰를 받아 봅니다. (프리미엄 리퀘스트 사용)
 
-## [Task 5](/Task05/README.md): 코드 리뷰와 리팩토링에 대한 Copilot 활용
+## [Task 5](/Task05/README.md): 임베디드 MCU 개발 활용 실습
+ - GitHub Copilot을 활용하여 임베디드 MCU 개발 환경에서 코드를 제안받는 실습입니다.
+ - STM32CubeIDE를 사용하여 STM32F4 MCU를 위한 간단한 LED 토글 프로그램을 작성합니다.
+ - Copilot을 통해 HAL 라이브러리를 활용한 코드 제안을 받고, 이를 통해 MCU 개발에 Copilot을 어떻게 활용할 수 있는지 익힙니다.
+
+## [Task 6](/Task06/README.md): 코드 리뷰와 리팩토링에 대한 Copilot 활용
 - Prompt 파일에 대해 알아보고, 프롬프트 파일을 생성하여 코드 리뷰를 받고, 리팩토링에 활용해 봅니다. 
 - 효율적인 프롬프트 작성과 컨텍스트 활용 방법을 익힙니다. 
 - Copilot Chat에 추가할 수 있는 다양한 컨텍스트들에 대해 확인합니다. 
 - Copilot을 활용해 Commit message를 자동 생성합니다.
 
-## [Task 6](/Task06/README.md): 프롬프트와 컨텍스트 사용
+## [Task 7](/Task07/README.md): 프롬프트와 컨텍스트 사용
 - 효율적인 프롬프트 작성과 컨텍스트 활용 방법을 익힙니다. 
 - Copilot Chat에 추가할 수 있는 다양한 컨텍스트들에 대해 확인합니다. 
 - Copilot을 활용해 Commit message를 자동 생성합니다.
-
-## [Task 7](/Task07/README.md): CI/CD 파이프라인 실습 
-  - 주어진 파이프라인에 대한 설명과 변환등을 GitHub Copilot을 사용하여 실습하는 예제입니다.
 
 ## [Task 8](/Task08/README.md): MCP (Model Context Protocol) 활용 실습
  - VS Code에서 Model Context Protocol 서버를 설정하고, 활용해 봅니다.
