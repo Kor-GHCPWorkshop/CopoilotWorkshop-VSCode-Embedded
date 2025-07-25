@@ -45,7 +45,7 @@
 ## Step 3: 추가 기능 구현
 - Agent모드에서 Copilot이 제안한 코드를 기반으로, 아래와 같은 기능을 추가로 구현해 봅니다.
 
-### PWM 확장
+#### PWM 확장
 `@workspace TIM4를 사용해서 PB6, PB7 핀에 PWM 출력을 생성하는 코드를 만들어줘`
  
   - @workspace는 현재 워크스페이스 전체를 참조하기 위한 키워드 입니다. 상세 설명은 [Task 7](../Task07/README.md)에서 다룹니다.
@@ -54,20 +54,20 @@
   <img src="./img/06.png" width="600"> <br>
   <img src="./img/07.png" width="600"> <br>
  
-### ADC 확장  
+#### ADC 확장  
 `@workspace PA5 핀을 ADC1_CH5로 설정하고 온도 센서 아날로그 값을 읽는 함수를 추가해줘` <br>
   - PA5 핀은 STM32F4 MCU에서 ADC1_CH5로 설정되어 온도 센서의 아날로그 값을 읽는 데 사용됩니다. Copilot은 이 정보를 바탕으로 적절한 HAL 라이브러리 함수를 제안할 것입니다. <br>
   <img src="./img/08.png" width="600"> <br>
   <img src="./img/09.png" width="600"> <br>
  
-### UART 추가
+#### UART 추가
 `@workspace USART2를 사용해서 시스템 상태를 출력하는 디버깅 모듈을 만들어줘` <br>
   - USART2는 STM32F100 마이크로컨트롤러에 내장된 Universal Synchronous/Asynchronous Receiver Transmitter 2 하드웨어 모듈입니다. Copilot은 이 정보를 바탕으로 적절한 HAL 라이브러리 함수를 제안할 것입니다. <br>
   <img src="./img/10.png" width="600"> <br>
 
-### 버튼 인터럽트
+#### 버튼 인터럽트
 `@workspace PB4 핀에 EXTI 인터럽트를 설정하고 상태머신을 구현해줘` <br>
- <img src="./img/11.png" width="600"> <br>
+  <img src="./img/11.png" width="600"> <br>
 
 
 
